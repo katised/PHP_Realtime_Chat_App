@@ -16,7 +16,7 @@ class Database
     {
         // Create connection
         if (!$this->connection) {
-            $this->connection = new mysqli(katirakendustest-server.mysql.database.azure.com, ngiixtfooz, 8DG2QQVE258D21K6$, DB_NAME);
+            $this->connection = new mysqli("mariadbkati.mariadb.database.azure.com", "kati@mariadbkati", "J22bMeeld3", DB_NAME);
             $this->connection->set_charset('utf8mb4');
         }
         return $this->connection;
